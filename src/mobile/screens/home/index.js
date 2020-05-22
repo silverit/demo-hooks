@@ -1,18 +1,12 @@
-import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+
 import { useShop } from '@stores';
+import { HomeComp } from '@mobile/components';
 const Home = () => {
 	const { state, loadShop } = useShop();
 	const { SHOP_DETAIL } = state;
 	console.log(state);
-	return (
-		<Fragment>
-			<p>Hello Home Screen</p>
-			<Link to={'/tai-khoan'}>Tài Khoản</Link>
-			<button onClick={loadShop}>Load Shop Đi Nè</button>
-			{SHOP_DETAIL && <p>{JSON.stringify(SHOP_DETAIL)}</p>}
-		</Fragment>
-	);
+	return <HomeComp {...{ loadShop, SHOP_DETAIL }} />;
 };
 
 export default Home;
