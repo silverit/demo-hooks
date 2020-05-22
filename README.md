@@ -67,9 +67,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### Mấy thứ cần setup
 
--   Router (hookrouter or react router)
--   Store with context
--   Sử dụng useFetch <3
--   Life cycle react hook
