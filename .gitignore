@@ -1,0 +1,17 @@
+.idea/
+node_modules/
+dist/
+mongodb_data/
+*.iml
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+*.swp
+.DS_Store
+.env
+static/upload/*
+package-lock.json
+.vscode
+
+mongodb_data
+yarn-error.log
