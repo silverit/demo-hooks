@@ -1,5 +1,4 @@
 import { useReducer } from 'react';
-import useFecth from 'use-http';
 import api from './api';
 // action type
 const actionType = {
@@ -8,11 +7,7 @@ const actionType = {
 
 // reducer
 const initialState = {
-	SHOP_DETAIL: {
-		loading: null,
-		error: null,
-		data: null,
-	},
+	SHOP_DETAIL: null,
 };
 function reducer(state, action) {
 	switch (action.type) {
